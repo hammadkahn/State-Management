@@ -1,7 +1,7 @@
 import 'package:stacked/stacked.dart';
 
-class HomeViewModel extends BaseViewModel {
-  final String _title = "Home View";
+class StartupViewModel extends BaseViewModel {
+  final String _title = "Startup View";
   String get title => '$_title $_counters';
 
   int _counters = 0;
