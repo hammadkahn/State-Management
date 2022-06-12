@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:state/app/router.gr.dart';
+import 'package:state/ui/views/startup/startup_view.dart';
 
 import 'ui/views/home/home_view.dart';
 
@@ -13,8 +13,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp( 
-      initialRoute: 
-    );
+    return const MaterialApp(home: StartupView());
   }
 }

@@ -4,13 +4,13 @@ import 'package:state/ui/views/startup/startup_view.dart';
 import '../ui/views/home/home_view.dart';
 
 @MaterialAutoRouter(
-  replaceInRouteName: 'Page,Route',
+  replaceInRouteName: 'Startup,Route',
   routes: <AutoRoute>[
     AutoRoute(page: StartupView, initial: true),
-    AutoRoute(page: HomeView, initial: false),
+    AutoRoute(page: HomeView),
   ],
 )
-class $AppRouter {
+class $Routes {
   // This class is generated.
 
 }
