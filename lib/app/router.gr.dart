@@ -22,7 +22,7 @@ class Routes extends _i3.RootStackRouter {
 
   @override
   final Map<String, _i3.PageFactory> pagesMap = {
-    RouteView.name: (routeData) {
+    StartupView.name: (routeData) {
       return _i3.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i1.StartupView());
     },
@@ -34,17 +34,17 @@ class Routes extends _i3.RootStackRouter {
 
   @override
   List<_i3.RouteConfig> get routes => [
-        _i3.RouteConfig(RouteView.name, path: '/'),
+        _i3.RouteConfig(StartupView.name, path: '/'),
         _i3.RouteConfig(HomeView.name, path: '/home-view')
       ];
 }
 
 /// generated route for
 /// [_i1.StartupView]
-class RouteView extends _i3.PageRouteInfo<void> {
-  const RouteView() : super(RouteView.name, path: '/');
+class StartupView extends _i3.PageRouteInfo<void> {
+  const StartupView() : super(StartupView.name, path: '/');
 
-  static const String name = 'RouteView';
+  static const String name = 'StartupView';
 }
 
 /// generated route for

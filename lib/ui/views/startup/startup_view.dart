@@ -1,7 +1,8 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:state/ui/views/home/home_view.dart';
 import 'package:state/ui/views/startup/startup_viewModel.dart';
+import 'package:state/app/router.gr.dart';
 
 class StartupView extends StatelessWidget {
   const StartupView({Key? key}) : super(key: key);
@@ -17,8 +18,9 @@ class StartupView extends StatelessWidget {
               Center(child: Text(model.title)),
               ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HomeView()));
+                    AutoRouter.of(context).push(const HomeView());
+                    // Navigator.push(context,
+                    //     MaterialPageRoute(builder: (context) => HomeView()));
                   },
                   child: Text('Home'))
             ],

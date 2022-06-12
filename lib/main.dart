@@ -1,18 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:state/ui/views/startup/startup_view.dart';
 
+import 'app/router.gr.dart';
 import 'ui/views/home/home_view.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  
+  final _Routes = Routes();  
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: StartupView());
+    return MaterialApp.router(    
+      routerDelegate: _Routes.delegate(),    
+      routeInformationParser: _Routes.defaultRouteParser(),    
+    );    
+  
   }
 }
