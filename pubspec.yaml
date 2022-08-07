@@ -36,7 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   # State Management
-  stacked: ^2.3.3
+  stacked: ^2.3.15
   # Navigation
   auto_route:
   stacked_services:
